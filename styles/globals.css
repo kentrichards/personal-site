@@ -62,6 +62,6 @@
   }
 
   .resume-button {
-    @apply w-full xs:w-auto py-2 px-4 shadow rounded font-semibold text-lg text-white bg-indigo-600 hover:shadow-lg hover:bg-indigo-500 focus:outline-none focus:shadow-inner focus-visible:outline-black focus:bg-indigo-700 transition-shadow-and-colors duration-300;
+    @apply w-full xs:w-auto py-2 px-4 shadow rounded font-semibold text-center text-lg text-white bg-indigo-600 hover:shadow-lg hover:bg-indigo-500 focus:outline-none focus:shadow-inner focus-visible:outline-black focus:bg-indigo-700 transition-shadow-and-colors duration-300;
   }
 }
