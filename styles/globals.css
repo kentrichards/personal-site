@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply h-screen text-gray-900 bg-gradient-to-br from-gray-100 to-gray-50;
+    @apply h-screen text-gray-900 dark:text-gray-300 bg-gradient-to-br from-gray-200 to-gray-50 dark:from-gray-900 dark:to-gray-800;
   }
 }
 
@@ -20,8 +20,16 @@
 
   /* Home components */
   /* Article */
+  .article {
+    @apply article-text leading-normal space-y-8;
+  }
+
   .article-text {
-    @apply text-xl xs:text-2xl leading-normal;
+    @apply text-xl xs:text-2xl;
+  }
+
+  .article-header {
+    @apply flex items-center justify-between;
   }
 
   .text-highlight {
@@ -29,23 +37,23 @@
   }
 
   .blue-highlight {
-    @apply text-highlight text-light-blue-900 bg-light-blue-100;
+    @apply text-highlight text-light-blue-900 bg-light-blue-200 dark:bg-light-blue-900 dark:text-light-blue-300;
   }
 
   .green-highlight {
-    @apply text-highlight text-green-900 bg-green-100;
+    @apply text-highlight text-green-900 bg-green-200 dark:bg-green-900 dark:text-green-300;
   }
 
   .indigo-highlight {
-    @apply text-highlight text-indigo-900 bg-indigo-100;
+    @apply text-highlight text-indigo-900 bg-indigo-100 dark:bg-indigo-900 dark:text-indigo-300;
   }
 
-  .red-highlight {
-    @apply text-highlight text-red-900 bg-red-100;
+  .rose-highlight {
+    @apply text-highlight text-rose-900 bg-rose-100 dark:bg-rose-900 dark:text-rose-300;
   }
 
-  .orange-highlight {
-    @apply text-highlight text-orange-900 bg-orange-100;
+  .teal-highlight {
+    @apply text-highlight text-teal-900 bg-teal-200 dark:bg-teal-800 dark:text-teal-300;
   }
 
   /* Social links */
@@ -58,10 +66,10 @@
   }
 
   .icon {
-    @apply w-8 h-8 focus:outline-black;
+    @apply w-8 h-8 focus:outline-black dark:focus:outline-white;
   }
 
   .resume-button {
-    @apply w-full xs:w-auto py-2 px-4 shadow rounded font-semibold text-center text-lg text-white bg-indigo-600 hover:shadow-lg hover:bg-indigo-500 focus:outline-none focus:shadow-inner focus-visible:outline-black focus:bg-indigo-700 transition-shadow-and-colors duration-300;
+    @apply w-full xs:w-auto py-2 px-4 shadow rounded font-semibold text-center text-lg text-white bg-indigo-600 hover:shadow-lg hover:bg-indigo-500 focus:outline-none focus:shadow-inner focus-visible:outline-black dark:focus-visible:outline-white focus:bg-indigo-700 transition-shadow-and-colors duration-300;
   }
 }
