@@ -3,32 +3,19 @@ import { useState, useEffect } from 'react'
 import SunIcon from './sunIcon'
 import MoonIcon from './moonIcon'
 
-type ThemeOptions = 'light' | 'dark' | undefined
-
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState<ThemeOptions>(undefined)
+  const [darkMode, setDarkMode] = useState(false)
 
   const toggleTheme = () => {
-    let newValue: 'light' | 'dark'
-    if (theme === 'light') {
-      newValue = 'dark'
-    } else {
-      newValue = 'light'
-    }
-
-    setTheme(newValue)
-    localStorage.setItem('theme', newValue)
+    localStorage.setItem('theme', darkMode ? 'light' : 'dark')
     document.documentElement.classList.toggle('dark')
+    setDarkMode(!darkMode)
   }
 
   useEffect(() => {
-    const theme = localStorage.theme
-    setTheme(theme ?? 'light')
+    const theme = localStorage.getItem('theme')
+    setDarkMode(theme === 'dark')
   }, [])
-
-  if (!theme) {
-    return null
-  }
 
   return (
     <button
@@ -37,7 +24,7 @@ const ThemeToggle = () => {
       id="theme-toggle"
       title="Toggle the site's theme"
     >
-      {theme === 'light' ? <SunIcon /> : <MoonIcon />}
+      {darkMode ? <MoonIcon /> : <SunIcon />}
     </button>
   )
 }
