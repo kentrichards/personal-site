@@ -1,6 +1,6 @@
 const ArticleBody = () => (
   <article className="article-text">
-    I'm <span className="font-bold">Kent Richards</span> a fourth-year Computer
+    I'm <span className="font-bold">Kent Richards</span>, a fourth-year Computer
     Science student at Dalhousie University. In 2020 I worked at the Public
     Service Commission of Canada using{' '}
     <span className="blue-highlight">ReactJS</span> and{' '}
