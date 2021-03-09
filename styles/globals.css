@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen text-gray-900 bg-gradient-to-br from-gray-100 to-gray-50;
+  }
+}
+
+@layer components {
+  /* Layout components */
+  .layout-outer {
+    @apply px-8 py-12 md:pt-32;
+  }
+
+  .layout-inner {
+    @apply max-w-2xl mx-auto space-y-8;
+  }
+
+  /* Home components */
+  /* Article */
+  .article-text {
+    @apply text-xl xs:text-2xl leading-normal;
+  }
+
+  .text-highlight {
+    @apply py-0.5 px-1 rounded font-mono font-semibold;
+  }
+
+  .blue-highlight {
+    @apply text-highlight text-light-blue-900 bg-light-blue-100;
+  }
+
+  .green-highlight {
+    @apply text-highlight text-green-900 bg-green-100;
+  }
+
+  .indigo-highlight {
+    @apply text-highlight text-indigo-900 bg-indigo-100;
+  }
+
+  .red-highlight {
+    @apply text-highlight text-red-900 bg-red-100;
+  }
+
+  .orange-highlight {
+    @apply text-highlight text-orange-900 bg-orange-100;
+  }
+
+  /* Social links */
+  .social-container {
+    @apply flex flex-col-reverse xs:flex-row;
+  }
+
+  .social-links {
+    @apply flex justify-center items-center xs:justify-start xs:flex-grow mt-8 xs:mt-0 space-x-4;
+  }
+
+  .icon {
+    @apply w-8 h-8 focus:outline-black;
+  }
+
+  .resume-button {
+    @apply w-full xs:w-auto py-2 px-4 shadow rounded font-semibold text-lg text-white bg-indigo-600 hover:shadow-lg hover:bg-indigo-500 focus:outline-none focus:shadow-inner focus-visible:outline-black focus:bg-indigo-700 transition-shadow-and-colors duration-300;
+  }
+}
