@@ -1,12 +1,17 @@
 const EmailLink = () => (
-  <a className="icon" href="mailto:kent-richards@outlook.com">
+  <a
+    id="email"
+    className="icon"
+    href="mailto:kent-richards@outlook.com"
+    title="Shoot me an email"
+  >
     <svg
       fill="transparent"
       stroke="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="email"
     >
-      <title>Shoot me an email</title>
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
