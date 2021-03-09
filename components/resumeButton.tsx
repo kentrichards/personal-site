@@ -1,7 +1,7 @@
 const ResumeButton = () => (
-  <button className="resume-button">
+  <a className="resume-button" href="/docs/resume.pdf">
     Resume <span className="text-indigo-300">(PDF)</span>
-  </button>
+  </a>
 )
 
 export default ResumeButton
