@@ -1,17 +1,16 @@
+// moon.svg, via https://feathericons.com/
 const MoonIcon = () => (
   <svg
     fill="none"
     stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     aria-labelledby="theme-toggle"
   >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-    />
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
   </svg>
 )
 
