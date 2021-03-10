@@ -11,7 +11,8 @@ module.exports = {
         rose: colors.rose
       },
       screens: {
-        xs: '480px'
+        xs: '480px',
+        '4xl': '2600px'
       },
       transitionProperty: {
         'shadow-and-colors': [
