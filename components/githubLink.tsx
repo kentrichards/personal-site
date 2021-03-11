@@ -5,6 +5,8 @@ const GitHubLink = () => (
     className="icon"
     href="https://github.com/kentrichards"
     title="Checkout my projects on GitHub"
+    target="_blank"
+    rel="noopener noreferrer"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

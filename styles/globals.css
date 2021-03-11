@@ -2,37 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply text-base;
-}
-
-@screen xs {
-  html {
-    @apply text-lg;
-  }
-}
-
-@screen lg {
-  html {
-    @apply text-xl;
-  }
-}
-
-@screen 2xl {
-  html {
-    @apply text-3xl;
-  }
-}
-
-@screen 4xl {
-  html {
-    @apply text-5xl;
-  }
-}
-
 @layer base {
   body {
     @apply h-screen flex flex-col items-center justify-start lg:justify-center text-gray-900 dark:text-gray-300 bg-gradient-to-br from-gray-200 to-gray-50 dark:from-gray-900 dark:to-gray-800;
+  }
+
+  html {
+    @apply text-base;
+  }
+
+  @screen lg {
+    html {
+      @apply text-xl;
+    }
+  }
+
+  @screen 2xl {
+    html {
+      @apply text-2xl;
+    }
+  }
+
+  @screen 3xl {
+    html {
+      @apply text-3xl;
+    }
+  }
+
+  @screen 4xl {
+    html {
+      @apply text-4xl;
+    }
+  }
+
+  @screen 5xl {
+    html {
+      @apply text-5xl;
+    }
   }
 }
 

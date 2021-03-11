@@ -5,6 +5,8 @@ const LinkedInLink = () => (
     className="icon"
     href="https://www.linkedin.com/in/kent-richards/"
     title="Connect with me on LinkedIn"
+    target="_blank"
+    rel="noopener noreferrer"
   >
     <svg
       fill="none"
