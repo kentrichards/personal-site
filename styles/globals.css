@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply h-screen flex flex-col items-center justify-start lg:justify-center text-gray-900 dark:text-gray-300 bg-gradient-to-br from-gray-200 to-gray-50 dark:from-gray-900 dark:to-gray-800;
+    @apply text-gray-900 dark:text-gray-300 bg-gray-100 dark:bg-gray-800;
   }
 
   html {
@@ -13,31 +13,31 @@
 
   @screen lg {
     html {
-      @apply text-xl;
+      @apply text-lg;
     }
   }
 
   @screen 2xl {
     html {
-      @apply text-2xl;
+      @apply text-xl;
     }
   }
 
   @screen 3xl {
     html {
-      @apply text-3xl;
+      @apply text-2xl;
     }
   }
 
   @screen 4xl {
     html {
-      @apply text-4xl;
+      @apply text-3xl;
     }
   }
 
   @screen 5xl {
     html {
-      @apply text-5xl;
+      @apply text-4xl;
     }
   }
 }
@@ -45,11 +45,11 @@
 @layer components {
   /* Layout components */
   .layout-outer {
-    @apply px-8 py-12 md:pt-32 lg:py-0;
+    @apply px-8 py-12 md:py-16;
   }
 
   .layout-inner {
-    @apply max-w-2xl mx-auto space-y-8;
+    @apply max-w-2xl mx-auto;
   }
 
   /* Home components */
@@ -100,7 +100,7 @@
   }
 
   .icon {
-    @apply w-8 h-8 focus:outline-black dark:focus:outline-white;
+    @apply w-8 h-8 focus:outline-none focus-visible:outline-black dark:focus-visible:outline-white transform hover:rotate-12 hover:scale-110 transition-transform duration-300;
   }
 
   .resume-button {
